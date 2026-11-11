@@ -1,5 +1,5 @@
 {
-  "_version": 3,
+  "_version": 5,
   "cdp_port": 9222,
   "flow_start_url": "https://labs.google/fx/tools/flow",
   "flow_url_contains": [
@@ -53,7 +53,11 @@
   "button_ready_timeout_s": 45,
   "idle_timeout_s": 45,
   "max_retries_per_prompt": 2,
+  "ref_add_btn": "button[aria-label='Add ingredients to the prompt box'], button.add-menu-trigger, .bottom-controls button:has-text('add')",
+  "ref_upload_btn": "button:has-text('Upload media'), button.sidebar-upload-btn",
+  "ref_add_to_prompt_btn": "button:has-text('Add to prompt'), button.detail-add-to-prompt-btn",
+  "ref_ingredient_chip": "flow-ingredient-bar flow-ingredient-chip, .reference-ingredient-chip, flow-image-ingredient-chip",
   "ref_image_input": "input[type='file'][accept*='image'], input[type='file']",
-  "ref_image_btn": "button[aria-label*='image' i], button[aria-label*='upload' i], button[aria-label*='reference' i], button[aria-label*='attach' i], button:has-text('Add image'), button:has-text('Upload')",
-  "ref_image_chip": "[role='region'] img, .chip img, [aria-label*='image' i] img, div.ProseMirror ~ * img, button[aria-label*='Remove' i], button[aria-label*='Delete' i]"
+  "ref_image_btn": "button:has-text('Add'), button[aria-label*='Add' i], button:has-text('Upload'), button[aria-label*='Upload' i], button[aria-label*='Media' i], button[aria-label*='Attach' i], button:has-text('Add image'), button:has-text('Upload image'), button[aria-label*='reference' i], button[aria-label*='ingredient' i], button[aria-label*='image' i]",
+  "ref_image_chip": "flow-ingredient-bar flow-ingredient-chip, .reference-ingredient-chip, flow-image-ingredient-chip, div.ProseMirror .chip img, [aria-label*='Remove reference' i], [aria-label*='Remove ingredient' i]"
 }
